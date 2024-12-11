@@ -29,6 +29,8 @@ In the lectures, we covered that insertion sort has best-case time complexity of
 $\Theta(n)$ and worst-case time complexity of $\Theta(n^2)$. What is the
 average-case time complexity ($\Theta$)?
 
+The outer outer loop of our function iterares over all elements in our list. The inner loop iterates over all values to the right of our outer loops current iteration and performs a constant time operation within. While the inner loop in practice doesn't iterate over every element every time it executes, it still runs at an average time linear to the number of elements. Multiplying our two linear time functions together gives us an average-case time complexity of ($\Theta$)(n<sup>2</sup>)
+
 Hint: Think about what happens in each iteration of the loop, and how often the
 loop is executed. Keep in mind that for asymptotic analysis we don't care about
 constant factors.
